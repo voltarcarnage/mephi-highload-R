@@ -168,9 +168,11 @@ find_prime_numbers <- function(a, b, flag = 0){
   end_time = Sys.time()
   cat('time', as.integer((end_time - start_time) * 10^3), 'ms', '\n')
 
-  if(flag)
+  if(flag){
     for(i in 1:indx)
       cat(vector[i], " ")
+    cat("\n")
+  }
 
 }
 #5.1
@@ -224,4 +226,3 @@ main <- function(){
 }
 
 main()
-

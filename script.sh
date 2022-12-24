@@ -8,5 +8,3 @@ read var4
 echo -e "$var1\n$var2\n$var3\n$var4" > input_from_file
 Rscript script.R 
 rm input_from_file
-
-
