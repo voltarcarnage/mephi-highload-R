@@ -33,8 +33,11 @@ lcg <- function(n = 1, seed = 7, flag = 0) {
 
   cat('time', as.integer((end_time - start_time) * 10^3), 'ms', '\n')
   
-  if(flag)
-    print(as.integer(x))
+  if(flag){
+    for(i in 1:length(x))
+      cat(as.integer(x[i]), " ")
+    cat("\n")
+  }
 }
 
 #1.1
@@ -94,8 +97,11 @@ mergeSortTotal <- function(N,seed, flag = 0) {
   end_time = Sys.time()
   cat('time', as.integer((end_time - start_time) * 10^3), 'ms', '\n')
   
-  if(flag)
-    print(arr)
+  if(flag){
+    for(i in 1:length(arr))
+      cat(arr[i], " ")
+    cat("\n")
+  }
 }
 
 #2.1 skip
